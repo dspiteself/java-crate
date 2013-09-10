@@ -1,5 +1,45 @@
 # Release notes
 
+## java-0.8.0-beta.5
+
+- Fix :settings phase in server-spec
+
+- Log settings at debug
+
+- Update :header in metadata for consistency
+
+- Pull in lein-pallet-crate for the crate-doc task
+
+## java-0.8.0-beta.4
+
+- Install method takes a map rather than varargs
+
+## java-0.8.0-beta.3
+- Install crate during install phase
+
+- Fix install to take options to get instance-id
+
+- Ensure active alternative is used for env vars
+
+- Update to pallet-beta.6
+
+## java-0.8.0-beta.2
+
+- Update to pallet 0.8.0-beta.5 and crates 0.1.0
+
+- Add pallet.clj based integration tests
+
+- Fix w8 install strategy
+
+- Add install from tar.gz option
+
+- Standardise the settings and install defplan names
+  Rename install-java to install, java-settings to settings, and java to
+  server-spec.
+
+- Update to support crate metadata
+  Adds in crate metadata and README.md generation.
+
 ## java-0.8.0-beta.1
 
 - Update for pallet 0.8.0-beta.1
@@ -84,14 +124,14 @@
 - Update java, maven and tomcat to use pallet 0.4.15
 
 - Update java, tomcat, and maven to use jpackage-utils-compat
-  Update java based crates to use the updated jpackage functions in 
+  Update java based crates to use the updated jpackage functions in
   pallet.resource.package, based on the jpackage-utils-compat rpm
 
 - Update java and tomcat crates for jpackage repos disabled by default
 
 - Update for 0.5.0-SNAPSHOT
   Change pallet.resource.* to pallet.action.*. Change stevedore calls to
-  script functions to use unquote and the pallet.script.lib namespace. 
+  script functions to use unquote and the pallet.script.lib namespace.
   Change request to session.  Change build-resources to build-actions.
 
 
@@ -186,4 +226,3 @@
 - Fixed package manager add-scope, tests still need update
 
 - Added new resources, crates and configure-resources
-
